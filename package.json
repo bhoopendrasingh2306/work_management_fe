@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type":"module",
+  "private": true,
 
   "scripts": {
-    "start": "nodemon",
+    "start": "react-scripts start",
     "build": "npm i",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

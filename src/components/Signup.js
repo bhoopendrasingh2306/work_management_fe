@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const url =`https://work-management-be.onrender.com/signup`;
   const [name, setText] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -25,7 +26,7 @@ function Signup() {
     console.log({ name, email, password });
     // axios is used to send data from UI to database or from react to database  .then is used to resolve promise
     axios
-      .post("http://localhost:4000/signup", { name, email, password })
+      .post(url, { name, email, password })
       .then((result) => {
         console.log(result); // result contain the response comming from axios
         if (result) {

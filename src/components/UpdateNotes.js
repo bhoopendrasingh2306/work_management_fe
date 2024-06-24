@@ -20,7 +20,7 @@ const UpdateNotes = () => {
       Authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
     };
     axios
-      .get(`http://localhost:4000/notes/update/${params.id}`, {
+      .get(`https://work-management-be.onrender.com/notes/update/${params.id}`, {
         headers: headers,
       })
       .then((result) => {
@@ -112,7 +112,7 @@ const UpdateNotes = () => {
     };
     axios
       .put(
-        `http://localhost:4000/notes/update/${params.id}`,
+        `https://work-management-be.onrender.com/notes/update/${params.id}`,
         { filename, text },
         { headers: headers }
       )
@@ -134,7 +134,7 @@ const UpdateNotes = () => {
     const headers = {
         Authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
       };
-      axios.delete(`http://localhost:4000/notes/delete/${params.id}`, {headers:headers})
+      axios.delete(`https://work-management-be.onrender.com/notes/delete/${params.id}`, {headers:headers})
       .then((result)=>{
         console.log(result)
         navigate("/noteslist")

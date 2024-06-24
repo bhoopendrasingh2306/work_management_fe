@@ -20,7 +20,7 @@ const ToDo = () => {
     };
 
     axios
-      .get(`http://localhost:4000/todo/get/${id}`, { headers: headers })
+      .get(`const url =https://work-management-be.onrender.com/todo/get/${id}`, { headers: headers })
       .then((result) => {
         console.log(result.data);
         setList(result.data);
@@ -32,7 +32,7 @@ const ToDo = () => {
       Authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
     };
     axios
-      .delete(`http://localhost:4000/todo/add/${id}`, { headers: headers })
+      .delete(`https://work-management-be.onrender.com/todo/add/${id}`, { headers: headers })
       .then((result) => {
         if (result) {
           todoList(userId);
@@ -49,7 +49,7 @@ const ToDo = () => {
     } else
       axios
         .post(
-          "http://localhost:4000/todo/add",
+          "https://work-management-be.onrender.com/todo/add",
           { text, userId, check: false },
           { headers: headers }
         )
@@ -70,7 +70,7 @@ const ToDo = () => {
 
     axios
       .put(
-        `http://localhost:4000/todo/add/${e.target.value}`,
+        `https://work-management-be.onrender.com/add/${e.target.value}`,
         { check: e.target.checked },
         { headers: headers }
       )

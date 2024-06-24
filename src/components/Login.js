@@ -18,7 +18,7 @@ const Login = () => {
   const handleLogin = async () => {
     console.log(email, password);
     axios
-      .post("http://localhost:4000/login", { email, password })
+      .post("https://work-management-be.onrender.com/login", { email, password })
       .then((result) => {
         console.log("server output is", result);
         if (result.data.auth) {

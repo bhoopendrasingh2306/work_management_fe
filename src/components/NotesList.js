@@ -33,7 +33,7 @@ const NotesList = () => {
       const headers = {
         Authorization: `bearer ${JSON.parse(localStorage.getItem("token"))}`,
       };
-        axios.get(`http://localhost:4000/get/notes/${id}`, {headers:headers})
+        axios.get(`https://work-management-be.onrender.com/get/notes/${id}`, {headers:headers})
         .then((result)=>{
             // console.log(result.data.length);
               setcardsData(result.data);

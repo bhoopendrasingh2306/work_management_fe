@@ -107,7 +107,7 @@ const NotesEditor = () => {
     else{
       axios
       .post(
-        "http://localhost:4000/notes/add",
+        "https://work-management-be.onrender.com/notes/add",
         { filename, text, userId },
         { headers: headers }
       )

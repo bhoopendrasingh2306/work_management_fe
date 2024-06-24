@@ -26,7 +26,7 @@ function Profile() {
     };
     console.log(params);
     axios
-      .get(`http://localhost:4000/profile/${params.id}`, { headers: headers })
+      .get(`https://work-management-be.onrender.com/profile/${params.id}`, { headers: headers })
       .then((result) => {
         console.log(result);
         setName(result.data.name);
@@ -46,7 +46,7 @@ function Profile() {
     
     
       axios
-      .put(`http://localhost:4000/profile/${params.id}`, formData, {
+      .put(`https://work-management-be.onrender.com/profile/${params.id}`, formData, {
         headers: headers,
       })
       .then((result) => {

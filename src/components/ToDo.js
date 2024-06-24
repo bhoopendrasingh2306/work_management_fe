@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 const ToDo = () => {
+  const url =`https://work-management-be.onrender.com`
   const [text, setText] = useState("");
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
@@ -20,7 +21,7 @@ const ToDo = () => {
     };
 
     axios
-      .get(`https://work-management-be.onrender.com/todo/get/${id}`, { headers: headers })
+      .get(`${url}/todo/get/${id}`, { headers: headers })
       .then((result) => {
         console.log(result.data);
         setList(result.data);

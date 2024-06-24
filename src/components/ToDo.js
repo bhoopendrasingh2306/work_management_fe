@@ -129,7 +129,7 @@ const ToDo = () => {
                   Delete
                 </button>
               </li>
-              <li hidden:true>{item._id}</li>
+              <li >{item._id}</li>
             </ul>
           ))
         ) : (

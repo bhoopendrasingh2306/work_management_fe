@@ -3,9 +3,8 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "private": true,
-
   "scripts": {
     "start": "react-scripts start",
     "build": "npm i",
@@ -48,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

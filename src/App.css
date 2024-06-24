@@ -30,6 +30,11 @@
   margin-top: 100px;
   
 }
+
+.login h1{
+  color: rgb(201, 159, 186);
+}
+
 .bg{
   height: 540px;
   width: 100%;
@@ -421,7 +426,7 @@
   /* height: 100px;
   width: 100px;
   border-radius: 50px; */
-  margin: auto;
+  margin-top: 10px;
   position: relative; width: 100px; height: 100px; overflow: hidden; border-radius: 50%;
   
 }

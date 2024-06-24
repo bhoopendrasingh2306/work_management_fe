@@ -12,6 +12,7 @@ const Card = ({ title, content, onClick }) => (
       borderRadius: "8px",
       cursor: "pointer",
       fontFamily: "cursive",
+      color:"skyblue"
     }}
     onClick={onClick}
   >
@@ -56,7 +57,7 @@ const HomePage = () => {
       }}
     >
       <div style={{ maxWidth: "800px", width: "100%" }}>
-        <h1 style={{ fontFamily: "cursive" }}>Please Choose The Domain</h1>
+        <h1 style={{ fontFamily: "cursive" , color:"skyblue"}}>Please Choose The Domain</h1>
         {/* Map through the data and render each card with click functionality */}
         {cardsData.map((card, index) => (
           <Card

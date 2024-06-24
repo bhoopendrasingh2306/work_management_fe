@@ -1,11 +1,68 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav_right{
+  text-align: right;
 }
+.nav-ul{
+  background-color: rgb(19, 7, 128);
+  display: flex;
+
+}
+.nav-ul li{
+  /* display: flex; */
+  padding: 10px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+
+.login{
+  margin-left: 30%;
+  margin-top: 100px;
+  
+}
+.bg{
+  height: 540px;
+  width: 100%;
+  display: flex;
+  background-image: url("./components/background.jpg");
+}
+.bg2{
+  height: 600px;
+  width: 100%;
+  /* display: flex; */
+  background-image: url("./components/background.jpg");
+}
+
+.inputbox{
+  padding: 7px;
+  display: block;
+  border: 1px solid skyblue;
+  width: 300px;
+  margin: 20px;
+}
+
+.loginbtn{
+  margin: 20px;
+  width: 150px;
+  padding: 10px;
+  background-color: skyblue;
+  border: solid 1px;
+  cursor: pointer;
+}
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +92,348 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.invalid-input {
+  color: red;
+  margin-left: 20px;
+  display: block;
+  margin-top: -20px;
+}
+
+.profile{
+  margin-left: 35%;
+  margin-top: 80px;
+}
+
+.img_message {
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  display: block;
+  margin-top: 0px;
+}
+
+.profile_message{
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  display: block;
+  margin-top: 0px;
+}
+
+.add_todo{
+  margin-left: 19%;
+}
+
+.todo_heading{
+  margin-left: 26%;
+    font-family: cursive;
+    font-size: 40px;
+    color: cadetblue;
+}
+
+.add_input{
+  margin-top: 3%;
+    width: 22em;
+    height: 69px;
+    font-size: 25px;
+    border: 3px solid skyblue;
+    border-radius:10px ;
+}
+
+/* .add_button{
+  width: 8em;
+    height: 40px;
+    font-size: 20px;
+    background: #04adbcfe;
+    margin-left: 30px;
+    border-radius: 10px;
+} */
+
+
+.todo-list{
+  text-align: center;
+  margin-top: 25px;
+  font-family: cursive;
+}
+
+.todo-list ul li {
+  display: inline-block;
+  border: 2px solid skyblue;
+  padding: 5px;
+  width: 150px;
+
+}
+
+/* .todo-list ul{
+  
+} */
+
+.valid-input {
+  color: rgb(255, 255, 255);
+  display: block;
+  margin-top: 20px;
+}
+
+.unvalid-input{
+  color: red;
+  display: block;
+  margin-top: 20px;
+}
+
+/* .save_button{
+  width: 8em;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgb(100, 194, 208);
+  margin-left: 45%;
+  margin-top: 5px;
+} */
+
+
+.save_button {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 150px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 45%;
+  margin-top: 15px;
+}
+
+.save_button:focus {
+  outline: 0;
+}
+
+.save_button:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.save_button:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
+
+/* add button */
+.add_button,
+.add_button:after {
+  width: 150px;
+  height: 76px;
+  line-height: 78px;
+  font-size: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  background: linear-gradient(45deg, transparent 5%, rgb(73, 9, 162) 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  box-shadow: 6px 0px 0px #f600bd;
+  outline: transparent;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 30px;
+}
+
+.add_button:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'ADDING TODO';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.add_button:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .add_button,
+  .add_button:after {
+    width: 200px;
+    height: 86px;
+    line-height: 88px;
+  }
+}
+
+
+
+/* noteslist css */
+
+.button-50 {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-50 {
+    padding: 12px 50px;
+  }
+}
+
+/* filename */
+
+.input_filename{
+  margin-top: 15%;
+  height: 47px;
+  width: 98%;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 4px;
+  padding-left: 8px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.image_of_profile{
+  background-color: rgb(0, 0, 0);
+  /* height: 100px;
+  width: 100px;
+  border-radius: 50px; */
+  margin: auto;
+  position: relative; width: 100px; height: 100px; overflow: hidden; border-radius: 50%;
+  
+}
+
+.profileimage{
+  /* max-width: 100%;
+  max-height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 20px;
+  overflow: hidden; */
+  width: 100%;
+  height: auto;
 }

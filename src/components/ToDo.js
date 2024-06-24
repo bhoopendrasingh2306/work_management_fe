@@ -20,7 +20,7 @@ const ToDo = () => {
     };
 
     axios
-      .get(`const url =https://work-management-be.onrender.com/todo/get/${id}`, { headers: headers })
+      .get(`https://work-management-be.onrender.com/todo/get/${id}`, { headers: headers })
       .then((result) => {
         console.log(result.data);
         setList(result.data);

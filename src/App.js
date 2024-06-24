@@ -1,15 +1,15 @@
-import Nav from './components/Nav';
+import Nav from './components/Nav.js';
 import './App.css';
 import {BrowserRouter , Routes, Route} from 'react-router-dom';
-import Signup from './components/Signup';
-import Login from './components/Login';
-import HomePage from './components/HomePage';
-import PrivateComponent from './components/PrivateComponents';
-import Profile from './components/Profile';
-import ToDo from './components/ToDo';
-import NotesList from './components/NotesList';
-import NotesEditor from './components/NotesEditor';
-import UpdateNotes from './components/UpdateNotes';
+import Signup from './components/Signup.js';
+import Login from './components/Login.js';
+import HomePage from './components/HomePage.js';
+import PrivateComponent from './components/PrivateComponents.js';
+import Profile from './components/Profile.js';
+import ToDo from './components/ToDo.js';
+import NotesList from './components/NotesList.js';
+import NotesEditor from './components/NotesEditor.js';
+import UpdateNotes from './components/UpdateNotes.js';
 
 function App() {
   return (

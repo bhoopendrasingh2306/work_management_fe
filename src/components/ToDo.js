@@ -70,7 +70,7 @@ const ToDo = () => {
 
     axios
       .put(
-        `https://work-management-be.onrender.com/add/${e.target.value}`,
+        `https://work-management-be.onrender.com/todo/add/${e.target.value}`,
         { check: e.target.checked },
         { headers: headers }
       )
@@ -129,7 +129,7 @@ const ToDo = () => {
                   Delete
                 </button>
               </li>
-              <li>{item._id}</li>
+              <li hidden:true>{item._id}</li>
             </ul>
           ))
         ) : (
